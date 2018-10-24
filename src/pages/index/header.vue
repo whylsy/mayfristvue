@@ -2,17 +2,27 @@
   <div class="header">
      <div class="back iconfont">&#xe64e;</div>
      <div class="search">
-     	 <span class="search-icon iconfont">&#xe61e;</span>请输入搜索内容
+	     	<div class="search-content">
+	     		<span class="search-icon iconfont">&#xe61e;</span>
+	     		请输入搜索内容
+	     	</div>
      </div>
-     <div class="city">
-     	   乌鲁木齐
-     </div>
+     <router-link to="/city">
+     		<div class="city">
+     			{{city}}
+     		</div>
+     </router-link>
+     
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
-  name: 'index-header'
+  name: 'index-header',
+  computed: {
+  	...mapState(['city'])
+  }
 }
 </script>
 
@@ -25,35 +35,52 @@ export default {
  background: $bgColor
  color: #fff
 .back
-  width: 2.4rem
-  text-align: center
-  font-size:1.6rem
+ width: 2.4rem
+ text-align: center
+ font-size:1.6rem
 .search
   flex: 1
-  height: 2.5rem
-  line-height: 2.5rem
-  margin: 0.6rem 1rem
-  padding-left: 0.8rem
-  background: #fff 
-  border-radius: 0.2rem
+.search-content
+  width: 100%
+  height:2.4rem
+  margin-top: 0.6rem
+  background: #fff
   color: #ccc
+  line-height: 2.4rem
+  border-radius: 0.2rem
+  text-indent: 0.5em
   font-size: 1.4rem
 .search-icon
-  position: relative
-  top:0.1rem
-  padding-right: 0.9rem
   font-weight: bold
 .city
- padding-right: 2.2rem
  position: relative
- &:before
-  position: absolute
-  top: 1.6rem
-  right: 0.8rem
-  content:''
-  width: 0;
-  height: 0;
-  border-top: 0.6rem solid #fff;
-  border-left: 0.6rem solid transparent;
-  border-right: 0.6rem solid transparent;
+ float: right
+ max-width: 8.6rem
+ padding:0 2.2rem 0 0.8rem
+ overflow: hidden
+ white-space: nowrap
+ text-overflow: ellipsis
+ color: #fff
+&::before
+ position: absolute
+ top: 1.6rem
+ right: 0.8rem
+ content:''
+ width: 0;
+ height: 0;
+ border-top: 0.6rem solid #fff;
+ border-left: 0.6rem solid transparent;
+ border-right: 0.6rem solid transparent;
+			
 </style>
+	 			<!--position: relative
+				  &:before
+				  position: absolute
+				  top: 1.6rem
+				  right: 0.8rem
+				  content:''
+				  width: 0;
+				  height: 0;
+				  border-top: 0.6rem solid #fff;
+				  border-left: 0.6rem solid transparent;
+				  border-right: 0.6rem solid transparent;-->

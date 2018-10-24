@@ -1,3 +1,67 @@
+
+@charset "utf-8";
+/* -----------H-ui前端框架-----------------------
+H-ui.reset.css v1.2
+重定义浏览器默认样式
+H-ui.reser CSS file for H-ui
+Copyright H-ui Inc.
+http://www.H-ui.net
+date:2014.10.09
+Created & Modified by guojunhui.
+----------------------------------------------*/
+/*1 重定义浏览器默认样式
+	Name:			style_reset
+	Level:			Global
+	Explain:		重定义浏览器默认样式
+	Last Modify:	jackying
+*/
+*{word-wrap:break-word}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html,body{*position:static;font-size: 62.5%;}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;height:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}
+body{line-height:1.6}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration:underline;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}
+/*img*/
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+.img-responsive{max-width: 100%;height: auto}
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+ 
+/*HTML5 reset*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}
+legend small{font-size:15px;color:#999}
+svg:not(:root) {overflow: hidden}
+fieldset {border-width:0;padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"] {-webkit-appearance: textfield; /* 1 */-moz-box-sizing: content-box;-webkit-box-sizing: content-box; /* 2 */box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
+/*
+	Name:			style_clearfix
+	Example:		class="clearfix|cl"
+	Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高度缺失能问题
+*/
+
+
+
+
+
+
 /*@charset "utf-8";
 html {
 	background-color: #fff;
@@ -69,7 +133,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: tahoma, arial, "Hiragino Sans GB", "微软雅黑", simsun, sans-serif
+	font-family: tahoma, arial, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", simsun, sans-serif
 }
 
 h1,
@@ -150,7 +214,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "\0020"
+	content: " "
 }
 
 textarea {
@@ -163,8 +227,7 @@ textarea,
 button,
 select,
 a {
-	outline: 0 none;
-	border: none;
+	outline: 0 none
 }
 
 button::-moz-focus-inner,
@@ -190,333 +253,399 @@ sub {
 	vertical-align: baseline
 }
 
+@charset "utf-8";
+@font-face {
+	font-family: 'mpiconfont';
+	src: url('//s.qunarzz.com/piao/font/touch/1.2.6/mpiconfont.eot');
+	src: url('//s.qunarzz.com/piao/font/touch/1.2.6/mpiconfont.eot') format('embedded-opentype'), url('//s.qunarzz.com/piao/font/touch/1.2.6/mpiconfont.ttf') format('truetype'), url('//s.qunarzz.com/piao/font/touch/1.2.6/mpiconfont.woff') format('woff'), url('//s.qunarzz.com/piao/font/touch/1.2.6/mpiconfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+
+.mp-iconfont {
+	font-family: 'mpiconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.mpg-iconfont {
+	font-family: 'mpiconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
 html {
 	overflow-x: hidden;
 	height: 100%;
 	font-size: 50px;
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent
 }
 
 body {
 	font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
-	color: #333;
+	color: #212121;
 	font-size: .28em;
 	line-height: 1;
-	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none
 }
 
 hr {
 	height: .02rem;
 	margin: .1rem 0;
 	border: medium none;
-	border-top: .02rem solid #cacaca;
+	border-top: .02rem solid #cacaca
 }
 
 a {
-	color: #25a4bb;
-	text-decoration: none;
-}*/
+	color: #00afc7;
+	text-decoration: none
+}
+
+input[type=checkbox],
+input[type=radio] {
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	border: 1px solid #dcdcdc;
+	background: #fff;
+	vertical-align: middle;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+input[type=checkbox]:active,
+input[type=radio]:active {
+	border-color: #c6c6c6;
+	background: #ebebeb
+}
+
+input[type=checkbox]:hover {
+	border-color: #c6c6c6;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1)
+}
+
+input[type=radio] {
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+	background: #fff
+}
+
+input[type=radio]:checked::after {
+	content: '';
+	display: block;
+	position: relative;
+	top: 3px;
+	left: 3px;
+	width: 7px;
+	height: 7px;
+	background: #25a4bb;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em
+}
+
+input[type=checkbox]:checked {
+	background: #fff url(//simg3.qunarzz.com/piao/images/touch/checkbox_l.png) center no-repeat;
+	background-size: 16px 14px
+}
+
+input[type=checkbox]:focus {
+	border-color: #4d90fe;
+	outline: 0
+}
+
+input[type='button'] {
+	font: normal 14px/24px "Microsoft Yahei", arial
+}
+
 @charset "utf-8";
-html {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-size: 62.5%;
+.mp-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	background: #f5f5f5
 }
 
-body {
-    margin: 0;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #333333;
-    background-color: white;
-    height: 100%;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+@charset "utf-8";
+.mp-price {
+	font: .24rem "Microsoft yahei", "Hiragino sans gb", Arial, sans-serif
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
+.mp-price-num {
+	font: .28rem Tahoma, Helvetica, sans-serif
 }
 
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    vertical-align: baseline;
+@charset "utf-8";
+.mp-go-bookinglist {
+	height: .28rem;
+	margin: .2rem;
+	line-height: .28rem;
+	text-align: right
 }
 
-audio:not([controls]) {
-    display: none;
-    height: 0;
+.mp-go-bookinglist a {
+	color: #25a4bb
 }
 
-[hidden],
-template {
-    display: none;
+@charset "utf-8";
+@charset "utf-8";
+.mp-header {
+	position: relative;
+	height: .88rem;
+	background: #00bcd4;
+	z-index: 91
 }
 
-svg:not(:root) {
-    overflow: hidden;
+.mp-header-left,
+.mp-header-back {
+	position: absolute;
+	font-size: .36rem;
+	color: #fff;
+	text-align: center
 }
 
-a {
-    background: transparent;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    color: #0088cc;
+.mp-header-left {
+	left: 0;
+	top: 0;
+	width: .8rem;
+	height: .88rem;
+	line-height: .88rem
 }
 
-a:active {
-    outline: 0;
+.mp-header-back {
+	left: .1rem;
+	top: .1rem;
+	width: .72rem;
+	height: .72rem;
+	line-height: .72rem
 }
 
-a:active {
-    color: #006699;
+.mp-headerback-bg {
+	display: block;
+	width: .72rem;
+	height: .72rem;
+	background-color: #000;
+	opacity: .5;
+	-webkit-border-radius: .36rem;
+	-moz-border-radius: .36rem;
+	border-radius: .36rem
 }
 
-abbr[title] {
-    border-bottom: 1px dotted;
+.mp-headerback-icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: .72rem;
+	line-height: .72rem;
+	text-align: left;
+	text-indent: .24rem
 }
 
-b,
-strong {
-    font-weight: bold;
+.mp-header-title {
+	overflow: hidden;
+	margin: 0 1rem;
+	line-height: .88rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: .32rem;
+	text-align: center;
+	color: #fff
 }
 
-dfn {
-    font-style: italic;
+.mp-header-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: .8rem;
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+	font-size: .32rem;
+	color: #fff
 }
 
-mark {
-    background: #ff0;
-    color: #000;
+.mp-ellipsis {
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis
 }
 
-small {
-    font-size: 80%;
+.mp-ellipsis2 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
 }
 
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+.mp-ellipsis-multi {
+	position: relative
 }
 
-sup {
-    top: -0.5em;
+.mp-ellipsis-multi::after {
+	content: "...";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-left: 1em;
+	background-image: -webkit-linear-gradient(left, transparent, #fff 55%);
+	background-image: -o-linear-gradient(right, transparent, #fff 55%);
+	background-image: -moz-linear-gradient(right, transparent, #fff 55%);
+	background-image: linear-gradient(to right, transparent, #fff 55%)
 }
 
-sub {
-    bottom: -0.25em;
+.mp-header {
+	height: .68rem;
+	line-height: .68rem;
+	border-bottom: 0
 }
 
-img {
-    border: 0;
-    vertical-align: middle;
+.mp-tab-con {
+	height: .4rem;
+	line-height: .4rem;
+	background-color: #00bcd4;
+	padding: .2rem 1rem;
+	color: #fff
 }
 
-hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+.mp-tab-con ul {
+	border: 1px solid #fff;
+	border-radius: .03rem;
+	zoom: 1;
+	overflow: hidden
 }
 
-pre {
-    overflow: auto;
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+.mp-tab-con li {
+	width: 50%;
+	float: left;
+	text-align: center;
+	background-color: #00bcd4;
+	font-size: .28rem;
+	color: #fff
 }
 
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, monospace;
-    font-size: 1em;
+.mp-tab-con li.active {
+	background-color: #fff;
+	color: #00bcd4
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
+.mp-page h2 {
+	font-size: .24rem;
+	margin: .24rem .3rem
 }
 
-button {
-    overflow: visible;
+.mp-list {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	background-color: #fff
 }
 
-button,
-select {
-    text-transform: none;
+.mp-list:before {
+	content: '';
+	position: absolute;
+	width: 25%;
+	left: 25%;
+	height: 100%;
+	border-left: .02rem solid #ddd;
+	border-right: .02rem solid #ddd
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+.mp-list:after {
+	content: '';
+	position: absolute;
+	width: 10%;
+	left: 75%;
+	height: 100%;
+	border-left: .02rem solid #ddd;
+	border-right: 0
 }
 
-button[disabled],
-html input[disabled] {
-    cursor: default;
+.mp-list.mp-tr3:before {
+	width: 33.33%;
+	left: 33.33%
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+.mp-list.mp-tr3:after {
+	border: 0
 }
 
-input {
-    line-height: normal;
+.mp-list.mp-tr3 li {
+	width: 33.33%
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
+.mp-list li {
+	width: 25%;
+	height: .9rem;
+	line-height: .9rem;
+	font-size: .28rem;
+	text-align: center;
+	border-bottom: .02rem solid #ddd;
+	margin-bottom: -1px;
+	float: left;
+	position: relative;
+	z-index: 10;
+	color: #212121
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
+.mp-character-list {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	background-color: #fff;
+	padding: .3rem 0
 }
 
-input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.mp-character-list li {
+	width: 16.66%;
+	height: .9rem;
+	line-height: .9rem;
+	font-size: .28rem;
+	text-align: center;
+	float: left;
+	position: relative;
+	z-index: 10;
+	color: #212121
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-    border: 0;
-    padding: 0;
-}
-
-textarea {
-    overflow: auto;
-    resize: vertical;
-}
-
-optgroup {
-    font-weight: bold;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-form,
-blockquote {
-    margin: 0;
-}
-
-ul,
-ol,
-li,
-dl,
-dd {
-    margin: 0;
-    padding: 0;
-}
-
-ul,
-ol {
-    list-style: none outside none;
-}
-
-h1,
-h2,
-h3 {
-    line-height: 2;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.6rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-    color: #cccccc;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-    color: #cccccc;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-    color: #cccccc;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+.mp-character-list li a,
+.mp-list li a {
+	color: #212121;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: .28rem
+}*/
